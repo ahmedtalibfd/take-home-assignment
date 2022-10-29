@@ -10,7 +10,7 @@ export default function displayPosts() {
   const [isSubmitDisabled,setIsSubmitDisabled] = useState(false)
   const router = useRouter();
   const { userid }:any = router.query;
-  console.log("router", router.query)
+  
   useEffect(() => {
     if (userid) {
       fetch(`https://jsonplaceholder.typicode.com/users/${userid}/posts`)

@@ -3,7 +3,6 @@ import HeavyButton from "./HeavyButton";
 
 export default function NewsletterSignupForm() {
   const [inputValue, setInputValue] = useState("");
-  const [seci,setSi]= useState("")
 
   function onClickSignupButton() {
     console.log("you clicked the sign up button");

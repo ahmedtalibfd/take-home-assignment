@@ -25,9 +25,9 @@ const onPostSubmit = async(event:React.FormEvent<HTMLFormElement>) => {
   // making a post call
   const result = await createNewPost(title, postBody, parseInt(userid));
  // getting id from result
-  const {id} =result;
+  const { id } =result;
   setIsSubmitDisabled(false)
-  setPosts(posts => [{id,title,body:postBody},...posts])
+  setPosts(posts => [{ id,title,body:postBody },...posts])
   // resetiing title and body to null
   setPostBody("");
   setTitle("");
@@ -51,6 +51,6 @@ const onPostSubmit = async(event:React.FormEvent<HTMLFormElement>) => {
         </form>
                 <h1>Previous Posts</h1>
                 {generatePosts}
-              </>
+      </>
                 );
 }
